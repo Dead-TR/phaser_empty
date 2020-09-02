@@ -1,0 +1,23 @@
+{
+  "name": "phaser-webpack",
+  "version": "1.0.0",
+  "description": "Simple boilerplate project that combines [Phaser](http://phaser.io) with [Webpack](http://webpack.github.io).",
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "phaser": "^3.24.1",
+    "phaser-ce": "^2.8.0"
+  },
+  "devDependencies": {
+    "expose-loader": "^0.7.3",
+    "file-loader": "^6.0.0",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
+  },
+  "license": "ISC"
+}
